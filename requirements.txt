@@ -1,0 +1,12 @@
+python-docx
+bs4
+requests
+transformers
+pandas
+numpy
+scikit-learn
+nltk
+beautifulsoup4
+openpyxl
+flask
+sentence-transformers

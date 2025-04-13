@@ -1,0 +1,55 @@
+"I'm 28 years old, 68kg, and 5'10""",providing_info
+"I'm 35, weigh 95kg, 6'2""",providing_info
+"Female, 24 years, 55kg, I want to gain weight",providing_info
+"I’m 40 years old, weigh 80 kg, and I'm 5'6""",providing_info
+"My height is 5'4", I weigh 65kg, male",providing_info
+"I’m a 33-year-old female, 60kg, trying to lose weight",providing_info
+"I’m 27 years old, weigh 75kg, 5'8"", I want to increase muscle mass",providing_info
+"I’m 21, female, 52kg, 5’5”",providing_info
+"I'm a 29-year-old male, 70kg, 5’9” tall",providing_info
+"I weigh 90kg and I’m 6 feet tall",providing_info
+"I'm 19, male, 58kg, 5'7"",providing_info
+"I'm 45 years old, 85kg, and 5’11”",providing_info
+"I'm 60kg, 5'4", and 25 years old",providing_info
+"I'm allergic to dairy products",providing_info
+"I have hypertension",providing_info
+"I’m trying to bulk up",providing_info
+"I want to lose belly fat",providing_info
+"My goal is to build muscle",providing_info
+"My goal is to lose weight",providing_info
+"How many calories do I need daily?",query
+"Tell me my required calorie intake",query
+"What's my maintenance calories?",query
+"How much should I eat to gain weight?",query
+"What’s the best workout for weight loss?",query
+"What’s the best workout to gain muscle?",query
+"What diet should I follow to reduce fat?",query
+"What are some good home workouts?",query
+"What’s the ideal protein intake for me?",query
+"How can I build muscle faster?",query
+"Suggest a workout routine for fat loss",query
+"How many calories should I consume to bulk?",query
+"Give me a diet plan for weight gain",providing_info
+"Recommend meals for a vegetarian bodybuilder",query
+"How many grams of protein do I need?",query
+"What’s the best time to work out?",query
+"What should I eat before a workout?",query
+"What are the best post-workout meals?",query
+"What’s the right diet for a diabetic?",query
+"Can you suggest low-calorie meals?",query
+"How to increase flexibility?",query
+"I am 28 years old, 68kg, and 5'10""",providing_info
+"I am 35, weigh 95kg, 6'2""",providing_info
+"I am female, 24 years, 55kg, I want to gain weight",providing_info
+"I am 40 years old, weigh 80 kg, and I am 5'6""",providing_info
+"My height is 5'4", I weigh 65kg, I am male",providing_info
+"I am a 33-year-old female, 60kg, trying to lose weight",providing_info
+"I am 27 years old, weigh 75kg, 5'8"", I want to increase muscle mass",providing_info
+"I am 21, female, 52kg, 5’5”",providing_info
+"I am a 29-year-old male, 70kg, 5’9” tall",providing_info
+"I weigh 90kg and I am 6 feet tall",providing_info
+"I am 19, male, 58kg, 5'7"",providing_info
+"I am 45 years old, 85kg, and 5’11”",providing_info
+"I am 60kg, 5'4", and 25 years old",providing_info
+"I am allergic to dairy products",providing_info
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitness & Diet Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h3>💡 Vitalis Chatbot Features</h3>
+      <ul>
+        <li>👋 Greet and interact naturally</li>
+        <li>📚 Answer fitness & nutrition questions</li>
+        <li>🏋️‍♂️ Recommend personalized diet & workouts</li>
+      </ul>
+      <hr>
+
+      <h3>🧍‍♂️ User Info</h3>
+      <div id="user-info">
+        <p>No data yet</p>
+      </div>
+    </aside>
+
+    <main class="chat-area">
+      <div class="intro-message" id="intro-message">
+        <h2>💪 Welcome to the Fitness & Diet Chatbot : Vitalis</h2>
+        <ul>
+          <li>👋 Greet and interact naturally</li>
+          <li>📚 Ask your fitness & nutrition questions</li>
+          <li>🏋️‍♂️ Get personalized diet & workout plans</li>
+        </ul>
+      </div>
+
+      <div class="chat-box" id="chat-box"></div>
+
+      <div class="input-box">
+        <input type="text" id="user-input" placeholder="Type your message here..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const chatBox = document.getElementById("chat-box");
+    const input = document.getElementById("user-input");
+    const introMessage = document.getElementById("intro-message");
+
+    function appendMessage(sender, text) {
+      const message = document.createElement("div");
+      message.classList.add("message", sender);
+      message.innerHTML = text;
+      chatBox.appendChild(message);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    function sendMessage() {
+      const userText = input.value.trim();
+      if (userText === "") return;
+
+      introMessage.style.display = "none";
+      appendMessage("user", userText);
+      input.value = "";
+
+      fetch("/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: userText }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          appendMessage("bot", data.response);
+          if (data.user_data) {
+            const userInfoDiv = document.getElementById("user-info");
+            const info = data.user_data;
+            let infoHtml = "<ul>";
+
+            for (let key in info) {
+              if (info[key]) {
+                infoHtml += `<li><strong>${key.replace(/_/g, " ").toUpperCase()}</strong>: ${info[key]}</li>`;
+              }
+            }
+            infoHtml += "</ul>";
+            userInfoDiv.innerHTML = infoHtml;
+          }
+        });
+    }
+
+    input.addEventListener("keypress", function (e) {
+      if (e.key === "Enter") {
+        sendMessage();
+      }
+    });
+  </script>
+</body>
+</html>
