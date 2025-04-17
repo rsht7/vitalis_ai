@@ -51,7 +51,16 @@ The chatbot is deployed as a **Flask web app** with:
 
 > 📸 **Interface Snapshots**
 
+<div align="center">
 
+<img src="interface.png" width="700" alt="Home Interface"><br><br>
+<img src="interface1.png" width="700" alt="Chatbot Interface"><br><br>
+<img src="interface2.png" width="700" alt="User Info Extracted"><br><br>
+<img src="interface3.png" width="700" alt="User Info Extracted"><br><br>
+<img src="interface4.png" width="700" alt="User Info Extracted"><br><br>
+
+
+</div>
 
 ---
 
