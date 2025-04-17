@@ -55,5 +55,4 @@ The chatbot is deployed as a **Flask web app** with:
 
 ---
 
-## 🗂️ Project Structure
 
